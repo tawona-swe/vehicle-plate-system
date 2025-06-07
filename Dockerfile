@@ -4,11 +4,9 @@ FROM php:8.2-apache
 # Enable Apache mod_rewrite (needed for Laravel routing)
 RUN a2enmod rewrite
 
-# Install dependencies for PHP extensions
 RUN apt-get update && apt-get install -y libonig-dev
 
-# Install PHP extensions Laravel needs
-RUN docker-php-ext-install pdo pdo_mysql mbstring tokenizer xml ctype json
+RUN docker-php-ext-install pdo pdo_mysql mbstring xml ctype json
 
 # Install Composer (dependency manager)
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
