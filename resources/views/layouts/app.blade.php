@@ -83,7 +83,7 @@
                         <ul class="nav flex-column">
                             @if(Auth::user())
                             <li class="nav-item">
-                                <a class="nav-link" href="/dashboard">
+                                <a class="nav-link" href="{{ route('dashboard') }}">
                                     Dashboard
                                 </a>
                             </li>
@@ -93,7 +93,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/vehicle-plates">
+                                <a class="nav-link" href="{{ route('vehicles.index') }}">
                                     List of Plates
                                 </a>
                             </li>
@@ -105,7 +105,7 @@
                             </li>
                             @endif
                             <li class="nav-item">
-                                <a class="nav-link" href="/">
+                                <a class="nav-link" href="{{ route('home') }}">
                                     Home
                                 </a>
                             </li>
