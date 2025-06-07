@@ -6,6 +6,8 @@ RUN a2enmod rewrite
 
 RUN apt-get update && apt-get install -y libonig-dev
 
+RUN apt-get update && apt-get install -y libonig-dev libxml2-dev
+
 RUN docker-php-ext-install pdo pdo_mysql mbstring xml ctype json
 
 # Install Composer (dependency manager)
