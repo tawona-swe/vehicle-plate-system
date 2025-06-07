@@ -1,0 +1,154 @@
+/* General Body Styling */
+body {
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c2f33;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #1c1c5b, #273edb);
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+    color: white !important;
+}
+
+.navbar a.nav-link:hover {
+    color: #ffd700 !important; /* Gold hover */
+}
+
+.logo {
+    max-width: 100%;
+    height: 50px;
+    padding: 4px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #131b4d;
+    color: white;
+    height: 100vh;
+    padding-top: 1rem;
+    border-right: 2px solid #0e1225;
+}
+
+.sidebar .nav-link {
+    color: #d6d6d6;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #ffd7001a; /* Light gold highlight */
+    color: #ffd700;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #1825cf;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #0f1ba1;
+}
+
+.btn-outline-primary {
+    border-color: #1825cf;
+    color: #1825cf;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1825cf;
+    color: white;
+}
+
+/* Pagination */
+.pagination {
+    justify-content: center;
+}
+
+.page-item .page-link {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.9rem;
+    color: #1825cf;
+    border-radius: 6px;
+}
+
+.page-item.active .page-link {
+    background-color: #1825cf;
+    border-color: #1825cf;
+    color: white;
+}
+
+/* Form Styling */
+.form-control, .form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+input[type="text"]:focus, .form-select:focus {
+    border-color: #1825cf;
+    box-shadow: 0 0 0 0.2rem rgba(24, 37, 207, 0.25);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #1825cf, #3f51b5);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.bg-gradient-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.card .display-6 {
+    font-size: 2.5rem;
+}
+
+.card h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+/* Footer */
+footer {
+    background-color: #131b4d;
+    color: #ccc;
+    font-size: 0.85rem;
+    border-top: 1px solid #222;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
