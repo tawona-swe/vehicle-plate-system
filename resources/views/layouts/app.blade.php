@@ -7,6 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    {{-- icon --}}
+    <link rel="shortcut icon" href="{{ asset('img/zim_logo.png') }}" type="image/x-icon">
+
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
