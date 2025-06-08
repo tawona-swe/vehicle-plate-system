@@ -34,7 +34,7 @@ class VehiclePlatesController extends Controller
 
         $vehicles = $query->paginate(10);
 
-        return view("welcome", compact("vehicles"));
+        return view("welcome", compact("vehicles", "search"));
     }
 
     public function store(Request $request) {
