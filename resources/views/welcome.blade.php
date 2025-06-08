@@ -85,7 +85,7 @@
                         </div>                                    
                         @else
                         <div class="d-flex gap-2">    
-                            <p class="text-danger">No vehicles available.</p><a href="{{ route('home') }}">reload</a>
+                            <p class="text-danger">Vehicle plate {{ $search }} was not found.</p><a href="{{ route('home') }}">reload</a>
                         </div>
                         @endif
                     @endif
